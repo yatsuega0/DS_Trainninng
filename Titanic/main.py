@@ -35,3 +35,4 @@ def main():
     
 if __name__ == '__main__' :
     main()
+# result score 0.78708
