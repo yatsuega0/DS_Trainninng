@@ -1,15 +1,15 @@
 import pandas as pd
 import numpy as nu
-import DataProcessing as dp 
+import Processing  as pr
 import MainModel as mm
 
 
 def main():
-    dp_Inst = dp.Get_Data()
-    test_data, df = dp_Inst.read_data()
-    df = dp_Inst.missing_value(df)
+    pr_Inst = pr.Get_Data()
+    test_data, df = pr_Inst.read_data()
+    df = pr_Inst.missing_value(df)
     df_ = df.copy()
-    df_ = dp_Inst.feature_and_processing(df_)
+    df_ = pr_Inst.feature_and_processing(df_)
     display(df_.head())
     print(df_.columns)
 
